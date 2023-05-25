@@ -48,7 +48,7 @@ public class ClientThread extends Thread {
             // reads the weather information from the server
             while ((finalInformation = bufferedReader.readLine()) != null) {
                 final String finalizedInfo = finalInformation;
-                Log.e(Constants.TAG, "[CLIENT THREAD] An exception has occurred: " + finalizedInfo);
+                Log.e(Constants.TAG, "[CLIENT THREAD] a actualizat: " + finalizedInfo);
                 // updates the UI with the weather information. This is done using postt() method to ensure it is executed on UI thread
                 resultText.post(() -> resultText.setText(finalizedInfo));
 

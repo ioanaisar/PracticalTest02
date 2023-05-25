@@ -127,7 +127,7 @@ public class CommunicationThread extends Thread {
             MoneyInfo weatherForecastInformation;
             int ok =0;
             if (data.containsKey(money)) {
-                Log.i(Constants.TAG, "[COMMUNICATION THREAD] Getting the information from the cache...");
+          //      Log.i(Constants.TAG, "[COMMUNICATION THREAD] Getting the information from the cache...");
                 weatherForecastInformation = data.get(money);
 
                 // compar
@@ -136,7 +136,6 @@ public class CommunicationThread extends Thread {
                     System.out.println("time is " + time);
                     System.out.println("time is " + weatherForecastInformation.getTime1());
                     serverThread.setData(money, info);
-
 
                 }else {
                     rate =  weatherForecastInformation.getValue();
